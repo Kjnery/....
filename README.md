@@ -8,7 +8,7 @@ GUI:
 
 
 ## Credits:
-- [???](https://dreamclient.xyz) for the original client
+- [diegcrane](https://github.com/diegcrane) for the original client
 - [justjarfile](https://github.com/justjarfile/dream-advanced-client/) for the original source
 - ChatGPT for some stuff on the auth.cpp file LOL
 
