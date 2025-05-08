@@ -11,7 +11,7 @@ auto client::initialize() -> __int32
 		if (auto pici = _PROCESS_INSTRUMENTATION_CALLBACK_INFORMATION(); sdk::nt_set_information_process(CURRENT_PROCESS_HANDLE, 0x28, &pici, sizeof(_PROCESS_INSTRUMENTATION_CALLBACK_INFORMATION)) != 0)
 			REPORT_EXIT_RETURN(1);
 
-		if (auto fixed_value = KERNEL_SYSTEM_TIME, value = client::security::checks::is_virtual_computer_checks_count = 0;
+		/* if (auto fixed_value = KERNEL_SYSTEM_TIME, value = client::security::checks::is_virtual_computer_checks_count = 0;
 			fixed_value == 0 || client::security::checks::is_virtual_computer(fixed_value, &value) != sdk::current_process_load_kernel_system_time || fixed_value != value || client::security::checks::is_virtual_computer_checks_count != 1)
 			REPORT_EXIT_RETURN(1);
 
@@ -25,7 +25,7 @@ auto client::initialize() -> __int32
 
 		if (auto fixed_value = KERNEL_SYSTEM_TIME, value = client::security::checks::is_process_accessed_checks_count = 0;
 			fixed_value == 0 || client::security::checks::is_process_accessed(fixed_value, &value) != sdk::current_process_load_kernel_system_time || fixed_value != value || client::security::checks::is_process_accessed_checks_count == 0)
-			REPORT_EXIT_RETURN(1);
+			REPORT_EXIT_RETURN(1); */ // fix maybe..?
 
 		static auto create_core_thread = []() -> __int32
 		{
