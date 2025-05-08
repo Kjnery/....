@@ -154,7 +154,7 @@ auto client::features::combat::aim_assist::run(client::mapper::__minecraft& mine
 			(abs(closest_entity_view_angles_difference.x) / 45.) * sdk::generate_random_value(.725, (local_player.get_hurt_time() > 15 ? 2.25 : 1.35));
 
 		auto aim_speed_y = (__int32)
-			(client::features::combat::aim_assist::speed * min(game_sensitivity / game_sensitivity / game_sensitivity * .33f, 5.)) *
+			(client::features::combat::aim_assist::verticalspeed * min(game_sensitivity / game_sensitivity / game_sensitivity * .33f, 5.)) *
 			(abs(closest_entity_view_angles_difference.y) / 45.) * sdk::generate_random_value(.725, (local_player.get_hurt_time() > 15 ? 2.25 : 1.35));
 
 		auto new_angle_x = powf((sensitivity), 3) * 8.f * .03f * (__int32)timer.elapsed_milliseconds *

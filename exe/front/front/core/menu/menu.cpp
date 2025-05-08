@@ -213,6 +213,10 @@ auto client::core::menu::initialize() -> __int32
 
                         imgui::slider(slider_2, 10., 100.);
 
+						static auto slider_3 = imgui::__slider(XOR("VERTICAL SPEED"), (double*)client::core::ipc::get_setting_address(XOR("client::features::combat::aim_assist::verticalspeed")));
+
+						imgui::slider(slider_3, 0., 100.);
+
 						imgui::spacing();
 
 						static auto check_box_0 = imgui::__check_box(XOR("CLICKING ONLY"), (bool*)client::core::ipc::get_setting_address(XOR("client::features::combat::aim_assist::clicking_only")));

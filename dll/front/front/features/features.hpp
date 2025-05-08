@@ -33,6 +33,7 @@ namespace client::features::combat::aim_assist
 	__declspec(dllexport) inline auto distance = 0.;
 	__declspec(dllexport) inline auto fov = 0.;
 	__declspec(dllexport) inline auto speed = 0.;
+	__declspec(dllexport) inline auto verticalspeed = 0.;
 	__declspec(dllexport) inline auto clicking_only = false;
 	__declspec(dllexport) inline auto weapons_only = false;
 	__declspec(dllexport) inline auto break_blocks = false;
